@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+ <head>
+<meta charset="utf-8">
+<title>APLICACIÓN CINCO</title>
+<!--grupo CSS-->
+ <link rel="stylesheet" href="css/temapp5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js" type="text/javascript"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+ </head>
+ <body>
+  <div data-role="page" id="Principal" data-theme="b"> 
+   <div data-role="header" data-add-back-btn="false" data-back-btn-text="Regresar"data-back-btn-theme="b"><!--Este es el encabezado-->
+      <h1>DIA DE LA TIERRA</h1>       
+   </div><!--Aquí cierra el encabezado-->
+   <div align="center">
+   <p><strong>"SALVEMOS AL PLANETA, ES POSIBLE HACERLO, EL PLANETA SE PUEDE RESTAURAR UNA VEZ ELIMINADA LA FUENTE DE CONTAMINACIÓN"<strong></p>
+   </div>
+    <div align="center">
+     <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','imagenes/dia2.png',1)"><img src="imagenes/dia3.png" width="90%" height="30%" id="Image2" align="center"/>
+     </a>
+    </div>
+    
+   <div data-role="main" class="ui-content"> <!--Es un colapsable, el que le pushas y baja-->
+    <div data-role="collapsible" data-content-theme="false"> <!--Aqui abre el collapsible-->
+     <h1><strong>¿QUÉ ES?</strong></h1>
+     
+      <div align="center">
+       <img src="imagenes/dia4.png" width="50%" height="25%">
+      </div>
+      
+     <p>El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de lasuperpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos</p>
+      <br>
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a"> 
+     
+      <li class="ui-first-child ui-last-child"> <!--Es un boton de lista-->
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>MAS INFORMACIÓN...</h2>        
+       </a>             
+      </li><!--Aqui cierra el boton de lista-->       
+                
+      </ul>
+     
+     
+                
+      
+               
+     </div><!--Aqui cierra el collapsible-->
+   </div>  <!--Aqui cierra el main-->
+   
+   <h3>TEMA 2016:</h3>
+   <div> <!--Abres este div1 -->
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a"> 
+     
+      <li class="ui-first-child ui-last-child"> <!--Es un boton de lista-->
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>LOS ÁRBOLES</h2>
+        <p>¿Por qué los árboles?</p>
+       </a>             
+      </li><!--Aqui cierra el boton de lista-->
+      
+      <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:950px;height:350px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+       <!-- End WOWSlider.com -->
+
+      
+      <li class="ui-first-child ui-last-child"> <!--Es un boton de lista-->
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>ANTECEDENTES</h2>
+        <p>Motivos que llevaron a esta celebración</p>
+       </a>             
+      </li><!--Aqui cierra el boton de lista-->
+      
+      <li class="ui-first-child ui-last-child"> <!--Es un boton de lista-->
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>¿QUÉ HACER?</h2>
+        <p>ALGUNOS CAMBIOS POSITIVOS</p>
+       </a>             
+      </li><!--Aqui cierra el boton de lista-->       
+                
+    </ul>
+         
+   </div><!--cierras este div1 -->
+   
+    
+     <div data-role="footer" align="center" data-theme="b" data-position="fixed"><!--Aqui abre el footer donde va el icono-->
+       <div>
+        <img src="imagenes/tierra.png" width="46" height="46">
+       </div>
+       
+       <div>
+        <h4>App5</h4>
+        <h3>Dia de la Tierra</h3>
+        <h4>Yesenia Contreras Sánchez</h4>
+       </div>
+     
+     </div><!--Aqui cierra el footer-->
+     
+    </div><!--Este div no se para que rayos lo tiene pero si no se lo pongo no sale-->
+   
+  
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a"> <!--Aqui abre el div de la pagina-->
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"><!--Aqui abre el encabezado de la pagina-->
+           <h1>TEMA 2016: LOS ÁRBOLES</h1>
+      </div><!--Aqui cierra el encabezado de la pagina-->
+      
+       <div align="center">
+     <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','imagenes/arb1.png',1)"><img src="imagenes/arb2.png" width="90%" height="30%" id="Image3" align="center"/>
+     </a>
+      </div> 
+      
+       <div data-role="content" align="left">
+          <div>
+          
+           <h2 align="center">¿Por qué los árboles?</h2>
+          
+           <p><strong>Los árboles ayudan a combatir el cambio climático</strong>
+           <br> Absorben el exceso perjudicial de CO2 de nuestra atmósfera. De hecho, en un solo año, media héctarea de árboles maduros absorbe la misma cantidad de CO2 producido por la conducción promedio de un automóvil, que es de unos 42 000 kilómetros.</p>
+           
+           <p><strong>Los árboles nos ayudan a respirar aire limpio</strong>
+           <br> Los árboles absorben los olores y los gases contaminantes (óxidos de nitrógeno, amoníaco, dióxido de azufre y ozono) y las partículas de filtro del aire atrapándolos en sus hojas y su corteza.</p>
+           
+           <p><strong>Los árboles nos ayudan a contrarrestar la pérdida de especies.</strong>
+           <br> Mediante la plantación de los árboles adecuados, podemos ayudar a contrarrestar la pérdida de especies, así como proporcionar una mayor conectividad del hábitat entre los fragmentos forestales regionales.</p>
+           
+           <p><strong>Los árboles ayudan a las comunidades y sus medios de vida.</strong>
+           <br> Los árboles ayudan a las comunidades a lograr la sostenibilidad económica y ambiental a largo plazo y proporcionar los alimentos, la energía y los ingresos.</p>
+               
+                              
+                
+          </div>
+       </div>
+       
+       <div data-role="footer" align="center" data-theme="b" data-position="fixed"><!--Aqui abre el footer donde va el icono-->
+       <div>
+        <img src="imagenes/tierra.png" width="46" height="46">
+       </div>
+       
+       <div>
+        <h4>App5</h4>
+        <h3>Dia de la Tierra</h3>
+        <h4>Yesenia Contreras Sánchez</h4>
+       </div>
+     
+     </div><!--Aqui cierra el footer-->
+    
+    </div> <!--Aqui cierra el div de la pagina-->
+    
+    
+    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a"> <!--Aqui abre el div de la pagina-->
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"><!--Aqui abre el encabezado de la pagina-->
+           <h1>MAS INFORMACIÓN...</h1>
+      </div><!--Aqui cierra el encabezado de la pagina-->
+      
+      <div align="center">
+       <img src="imagenes/paris.png" width="90%" height="35%">
+      </div>
+      
+       <div data-role="content" align="left">
+          <div>
+          
+          <h2 align="center">El Día de la Madre Tierra coincide con la firma del Acuerdo de París</h2>
+          <p>Este año, el Día de la Madre Tierra coincide con la ceremonia de firma del Acuerdo de París sobre el cambio climático, que tendrá lugar en la sede de las Naciones Unidas en Nueva York. El Acuerdo fue aprobado por los 196 Estados partes de la Convención Marco sobre el Cambio Climático en París el 12 de diciembre de 2015. En el acuerdo, todos los países se comprometieron a trabajar para limitar el aumento de la temperatura global por debajo de los 2 grados centígrados, y dados los graves riesgos, a esforzarse por lograr que sea menos de 1,5 grados centígrados. La ceremonia se lleva a cabo en el primer día que el Acuerdo estará abierto para la firma, marcando el primer paso para asegurar que el Acuerdo entre en vigor jurídico tan pronto como sea posible.</p>
+          
+          <p>
+          La Asamblea General, Reconociendo que Madre Tierra es una expresión común utilizada para referirse al planeta Tierra en diversos países y regiones, lo que demuestra la interdependencia existente entre los seres humanos, las demás especies vivas y el planeta que todos habitamos y Observando que cada año se celebra el Día de la Tierra en numerosos países, decidió designar el 22 de abril como Día Internacional de la Madre Tierra en 2009, en virtud de la resolución 
+          </p>
+                
+          </div>
+       </div>
+       
+       <div data-role="footer" align="center" data-theme="b" data-position="fixed"><!--Aqui abre el footer donde va el icono-->
+       <div>
+        <img src="imagenes/tierra.png" width="46" height="46">
+       </div>
+       
+       <div>
+        <h4>App5</h4>
+        <h3>Dia de la Tierra</h3>
+        <h4>Yesenia Contreras Sánchez</h4>
+       </div>
+     
+     </div><!--Aqui cierra el footer-->
+    
+    </div> <!--Aqui cierra el div de la pagina-->
+    
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a"> <!--Aqui abre el div de la pagina-->
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"><!--Aqui abre el encabezado de la pagina-->
+           <h1>ANTECEDENTES</h1>
+      </div><!--Aqui cierra el encabezado de la pagina-->
+      
+      <div align="center">
+     <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','imagenes/conta1.png',1)"><img src="imagenes/conta2.png" width="90%" height="37%" id="Image4" align="center"/>
+     </a>
+     </div>
+    
+       <div data-role="content" align="center">
+          <div>
+       <p>El mundo ha respondido con lentitud a las emergencias generadas por el calentamiento de la Tierra y los daños que nuestra imprudencia está causando a nuestro planeta. Allá por 1972, cuando los ecologistas eran considerados un grupo marginal, celebramos en Estocolmo la primera Conferencia de las Naciones Unidas sobre el Medio Humano. Ésta representó el inicio de un proceso de concienciación mundial acerca de la interdependencia que existe entre los seres humanos, las demás especies vivas y nuestro planeta.</p>
+       
+     <div data-role="main" class="ui-content"> <!--Es un colapsable, el que le pushas y baja-->
+       <div data-role="collapsible" data-content-theme="false"> <!--Aqui abre el collapsible-->
+         <h1><strong>ALGUNOS MALES DE LA TIERRA</strong></h1>
+       
+          
+    <p align="left"> • Reducción de la Capa de Ozono, causado por contaminantes que son arrojados en la atmósfera, particularmente gases refrigerantes, CFCs<br> •	Lluvia Acida, causada por el dióxido de azufre de las industrias, afectando la composición del suelo y las aguas, afectando la vida sobre el planeta.<br> •	Basura, acumulándose en todos los espacios del planeta<br>•	Contaminación sónica, afectando a millones de personas, causando hipertensión arterial, ulceras, sordera, gastritis y hasta impotencia sexual.<br>• Contaminación de los suelos, por toneladas de plaguicidas, residuos tóxicos y desechos petroleros y mineros.<br>• Contaminación atmosférica, millones de vehículos aportan día a día toneladas de gases que deterioran la calidad del aire y lo hacen menos respirable<br>• Explosión demográfica. Cada día nacen alrededor de 250 mil niños en el mundo y cada año la población aumenta en 80 millones de seres humanos.<br>•	Deforestación. Cerca de 170 mil km 2 de bosques desaparecen anualmente.<br>• Extinción de Especies. Alrededor del 15% de las aves y del 25% de los mamíferos del planeta se encuentran amenazados<br>• Tráfico de Especies, convertido en el tercer negocio más lucrativo del mundo, ha acabado con miles de especies animales y vegetales.<br>• Contaminación de las aguas, por un manejo inadecuado de los desechos, aguas servidas, plaguicidas y fertilizantes.<br>• Desertificación, buena parte del planeta comienza a transformarse en desiertos, con el subsiguiente agotamiento de los recursos que inci de en las probabilidades de obtener alimentos nutritivos.</p>
+
+          
+          
+          
+                
+               <div>
+               <img src="imagenes/conta3.png" width="50%" height="20%">
+               </div>
+               
+       </div><!--Aqui cierra el collapsible-->
+     </div>  <!--Aqui cierra el main-->
+                
+          </div>
+       </div>
+       
+       <div data-role="footer" align="center" data-theme="b"><!--Aqui abre el footer donde va el icono-->
+       <div>
+        <img src="imagenes/tierra.png" width="46" height="46" data-position="fixed">
+       </div>
+       
+       <div>
+        <h4>App5</h4>
+        <h3>Dia de la Tierra</h3>
+        <h4>Yesenia Contreras Sánchez</h4>
+       </div>
+     
+     </div><!--Aqui cierra el footer-->
+    
+    </div> <!--Aqui cierra el div de la pagina-->
+    
+    
+    <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a"> <!--Aqui abre el div de la pagina-->
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"><!--Aqui abre el encabezado de la pagina-->
+           <h1>ESTO ES LO QUE PUEDES HACER</h1>
+      </div><!--Aqui cierra el encabezado de la pagina-->
+      
+       <div data-role="content" align="center">
+          <div>
+          <p>Es muy importante que todos tomemos conciencia de la importancia que tiene cuidar nuestro planeta y nuestros recursos.  En esta página, te mostraremos muchos consejos útiles que te servirán para este fin.</p>
+          <div>
+           <img src="imagenes/planeta1.png" width="80%" height="60%">
+          </div>
+          <br>
+          <div>
+           <img src="imagenes/planeta2.png" width="90%" height="35%">
+          </div>
+          <br>
+          <div>
+           <img src="imagenes/planeta3.png" width="80%" height="35%">
+          </div>
+          <br>
+          <div>
+           <img src="imagenes/planeta4.png" width="90%" height="40%">
+          </div>
+ 
+  
+                
+          </div>
+       </div>
+       
+       <div data-role="footer" align="center" data-theme="b" data-position="fixed"><!--Aqui abre el footer donde va el icono-->
+       <div>
+        <img src="imagenes/tierra.png" width="46" height="46">
+       </div>
+       
+       <div>
+        <h4>App5</h4>
+        <h3>Dia de la Tierra</h3>
+        <h4>Yesenia Contreras Sánchez</h4>
+       </div>
+     
+     </div><!--Aqui cierra el footer-->
+    
+    </div> <!--Aqui cierra el div de la pagina-->
+    
+    
+   
+   
+  </div><!--Aquí cierra el div principal-->
+
+ </body>
+</html>
